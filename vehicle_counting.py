@@ -25,7 +25,7 @@ input_video = args["input"]
 detection_graph, category_index = backbone.set_model('ssd_mobilenet_v1_coco_2018_01_28', 'mscoco_label_map.pbtxt')
 
 is_color_recognition_enabled = 1 # set it to 1 for enabling the color prediction for the detected objects
-roi = 185 # roi line position
+roi = 600 # roi line position
 deviation = 2 # the constant that represents the object counting area
 output_video = args['output']
 
