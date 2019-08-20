@@ -13,9 +13,9 @@ from utils import backbone
 from api import object_counting_api
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--input", required=True,
+ap.add_argument("-i", "--input", type=str, required=True,
 	help="path to input video")
-ap.add_argument("-r", "--roi", required=True,
+ap.add_argument("-r", "--roi", type=str, required=True,
 	help="ROI Line")
 args = vars(ap.parse_args())
 
